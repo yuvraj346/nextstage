@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2 - Puzzle Challenge</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+        }
+        .ascii-art {
+            font-size: 12px;
+            white-space: pre;
+        }
+        .clue {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #00ff00;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function revealImage() {
+            document.getElementById('hiddenImage').classList.toggle('hidden');
+        }
+    </script>
+</head>
+<body>
+    <div class="ascii-art">
+        <pre>
+            ██╗     ███████╗██╗   ██╗███████╗██╗         ██████╗     
+            ██║     ██╔════╝██║   ██║██╔════╝██║         ╚════██╗    
+            ██║     █████╗  ██║   ██║█████╗  ██║          █████╔╝    
+            ██║     ██╔══╝  ╚██╗ ██╔╝██╔══╝  ██║         ██╔═══╝     
+            ███████╗███████╗ ╚████╔╝ ███████╗███████╗    ███████╗    
+            ╚══════╝╚══════╝  ╚═══╝  ╚══════╝╚══════╝    ╚══════╝    
+                                                                          
+        </pre>
+    </div>
+    
+    <h2>Congratulations Player, Welcome to Level 2</h2>
+    <p>This level consists of 3 clues. Find them all to proceed to the next stage!</p>
+    
+    <div class="clue">
+        <h3>Clue 1: Playing with Links</h3>
+        <p>"You've reached the next-stage, but sometimes, to move forward, one must look back. The past holds secrets, and only those who understand its value will find the way. Maybe revisiting a 'previous stage' could reveal the path ahead?"</p>
+    </div>
+    
+    <div class="clue" onclick="revealImage()">
+        <h3>Clue 2: Hidden Button</h3>
+        <p>"Not everything is meant to be seen, and not every path is laid out before you. Some secrets reveal themselves only to those who dare to reach out. Perhaps a simple touch could uncover what’s hidden?"</p>
+        <img id="hiddenImage" src="they.jpg" class="hidden" alt="Secret Clue Image">
+    </div>
+    
+    <div class="clue">
+        <h3>Clue 3: Page Source Code</h3>
+        <p>"Not all truths are spoken aloud; some whisper in the silence of the code. To those who dare to look beneath the surface, a secret message awaits!"</p>
+    </div>
+</body>
+</html>
+
+
